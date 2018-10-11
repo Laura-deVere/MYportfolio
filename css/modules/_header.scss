@@ -1,0 +1,21 @@
+#navLogo {
+	background-color: white;
+	width: 91px;
+	height: auto;
+}
+
+header {
+	max-width: 100%;
+	height: 100px;
+	justify-content: space-around;
+	p {
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 760px) {
+	header {
+		justify-content: space-between;
+		padding: 0 60px 0 48px;
+	}
+}

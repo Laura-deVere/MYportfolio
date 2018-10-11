@@ -1,0 +1,36 @@
+.lines-container {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.inner-line-container {
+	margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.line {
+	position: absolute;
+    top: 0;
+    width: 2px;
+    background-color: hsla(0,0%,100%,.15);
+    height: 100%;
+}
+
+.line-one {
+	left: 40px;
+}
+
+.line-two {
+	left: 50%;
+    transform: translateX(-50%);
+}
+
+.line-three {
+	right: 40px;
+}
