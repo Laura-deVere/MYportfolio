@@ -17,13 +17,14 @@
 .line {
 	position: absolute;
     top: 0;
-    width: 2px;
+    width: 1px;
     background-color: hsla(0,0%,100%,.15);
+    background-color: black;
     height: 100%;
 }
 
 .line-one {
-	left: 40px;
+	left: 10px;
 }
 
 .line-two {
@@ -32,5 +33,14 @@
 }
 
 .line-three {
-	right: 40px;
+	right: 10px;
+}
+
+@media (min-width: 740px) { 
+    .line-one {
+        left: 40px;
+    }
+    .line-three {
+        right: 40px;
+    }
 }

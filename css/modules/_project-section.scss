@@ -1,6 +1,6 @@
 .projects {
 	>h1 {
-		width: 300px;
+		width: 275px;
 		margin: 0 auto;
 	}
 }
@@ -16,43 +16,99 @@
 			margin: 5px 11px 11px 11px;
 		}
 		p {
-			color: $lightGray;
+			color: black;
+			/*color: white;*/
 		}
 		h3 {
 			color: $medGray;
 		}
 		img {
-			max-width: 375px;
+			max-width: 100%;
     		height: auto;
     		align-self: center;
+    		/*Use display: inline-block for the transform: scale to work on chrome, firefox and opera and not to break the styling.*/
+    		display: inline-block;
 		}
 	}
 }
 
+.image-container {
+	display: block;
+	max-width: 80%;
+	overflow: hidden;
+	align-self: center;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.project-info {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+
+.github-link {
+	color: $pink;
+	i {
+		font-size: 2em;
+		padding: 10px;
+	}
+	a:visited {
+		color: $pink;
+	}
+}
+
+.liquid-button path {
+  cursor: pointer;
+}
+
+
 @media (min-width: 760px) { 
 	.projects {
-		/*flex-direction: row;*/
 		>h1 {
 			width: 87%;
 			font-size: 4em;
 			margin-bottom: 40px;
 		}
 	}
+	.project-img { 
+		max-width: 375px; 
+		min-height: 300px;
+		align-self: flex-start;
+		margin-right: 35px;
+		margin-left: 30px;
+	}
 	.projects-list {
 		li {
 			flex-direction: row;
 			img {
-				width: 40%;
+				width: 100%;
+				max-width: 375px;
 				align-self: flex-start;
 				margin-right: 35px;
 				margin-left: 30px;
+	  			/*-webkit-transition:all 0.3s; 
+				-moz-transition:all 0.3s; 
+				-ms-transition:all 0.3s; 
+				-o-transition:all 0.3s; */
+				transition:all 0.3s;
+			}
+			img:hover {
+				/*-webkit-transform:scale(1.1); 
+				-moz-transform:scale(1.1); 
+				-ms-transform:scale(1.1); 
+				-o-transform:scale(1.1);*/ 
+				transform:scale(1.1);
 			}
 			p {
 				line-height: 2em;
 			}
 		}
-		li:nth-of-type(2) {
-			img {
+		li:nth-of-type(2), 
+		li:nth-of-type(4),
+		li:nth-of-type(6) {
+			.image-container {
 				order: 2;
 			}
 		}

@@ -1,5 +1,4 @@
 #navLogo {
-	background-color: white;
 	width: 91px;
 	height: auto;
 }
@@ -10,6 +9,7 @@ header {
 	justify-content: space-around;
 	p {
 		font-size: 1em;
+		display: none;
 	}
 }
 
@@ -17,5 +17,8 @@ header {
 	header {
 		justify-content: space-between;
 		padding: 0 60px 0 48px;
+		p {
+			display: inline-block;
+		}
 	}
 }

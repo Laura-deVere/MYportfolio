@@ -1,11 +1,15 @@
 .contact {
 	width: 100%;
 	h1 {
-		width: 300px;
+		width: 275px;
 		margin: 24px auto;
 	}
 	form {
 		align-items: center;
+		border-right: 10px solid $purple;
+	    border-bottom: 5px solid transparent;
+	    border-top: 5px solid transparent;
+	    border-left: 10px solid $purple;
 	}
 }
 
@@ -15,9 +19,9 @@
 		font-size: 1.5em;
 	} 
 	input, textarea {
-		background-color: $darkestGray;
+		background-color: $lightGray;
 		border: 1px solid $darkestGray;
-		color: #fff;
+		color: $darkestGray;
     	padding: 5px;
 		z-index: 5;
     	margin-bottom: 1em;
@@ -26,13 +30,41 @@
 	input:focus, textarea:focus {
 		outline: none;
 	}
+	input:valid {
+	 border-bottom: 1px solid $green;
+	}
+	/*input:invalid {
+	 border-bottom: 1px solid $error;
+	}
+	input.visited.dirty:valid {
+	 border-bottom: 1px solid $success;
+	}*/
 }
 
+
+form.submitted input:invalid {
+ border-bottom: 1px solid $error;
+}
+
+@media (max-width: 375px) {
+	.form-field-group {
+		width: 78%;
+	}
+}
+@media (max-width: 320px) {
+	.form-field-group {
+		width: 75%;
+	}
+}
 @media (min-width: 760px) {
 	.contact {
 		align-items: center;
-	}
-	form {
-		width: 80%;
+		form {
+			width: 37%;		
+			border-right: 50px solid $purple;
+		    border-bottom: 25px solid transparent;
+		    border-top: 25px solid transparent;
+		    border-left: 50px solid $purple;
+		}
 	}
 }

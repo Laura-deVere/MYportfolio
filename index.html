@@ -1,135 +1,189 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" href="css/style.css">
+	<title>Laura deVere-Hopkins</title>
+	<link rel="stylesheet" href="css/style.css?v=2.7">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
 	<link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/36553c7db8.js"></script>
 </head>
 <body>
 	<header class="flex-row-center">
-		<object id="navLogo" type="image/svg+xml" data="css/images/logo2.svg">
-			Your browser does not support SVG
-		</object>
+		<img id="navLogo" src="css/images/black_transparent_XL.png">
 		<p>Laura deVere-Hopkins</p>
 	</header>
 	<div class="lines-container">
 		<div class="inner-line-container">
 			<div class="line line-one"></div>
-			<div class="line line-two"></div>
+			<!-- <div class="line line-two"></div> -->
 			<div class="line line-three"></div>
 		</div>
 	</div>
-	<section class="hero flex-colum-center">
-		<h1>
-			<span class="animate-header">W</span>
-			<span class="animate-header">e</span>
-			<span class="animate-header">b</span> 
-			<span class="animate-header"> </span>
-			<span class="animate-header">D</span>
-			<span class="animate-header">e</span>
-			<span class="animate-header">v</span>
-			<span class="animate-header">e</span>
-			<span class="animate-header">l</span>
-			<span class="animate-header">o</span>
-			<span class="animate-header">p</span>
-			<span class="animate-header">e</span>
-			<span class="animate-header">r</span>
-			<span class="animate-header"> </span>
-			<span class="animate-header">i</span>
-			<span class="animate-header">n</span>
-			<span class="animate-header"> </span>
-			<span class="animate-header">N</span>
-			<span class="animate-header">Y</span>
-			<span class="animate-header">C</span>
-			<span class="animate-header">.</span>
-		</h1>
-		<p>Just another human. Going about my human life, doing humans things and building humans websites for a living.</p>
+	<section class="hero">
+		<div class="flex-colum-center into">
+			<h1 id="animate-header"></h1>
+			<p class="bio-intro">I'm a Front End Developer, based in New York.
+			</p>
+		</div>
 		<div class="img-container">
-			<img src="css/images/woman.jpg" alt="headshot-image">
+			<img src="css/images/headshot.jpeg" alt="headshot-image">
+		</div>
+		<div class="flex-row-center">
+			<p class="bio">
+				My interest in coding compliments my passion for collaborating with my fellow humans!  Following 5years  Bartending/Serving, I decided to switch direction and learn to code.  Pursuing a career in the growing world of Tech.
+				<br>
+				Building user-friendly interfaces is my main goal.  I'm excited about learning opportunities that I will encounter in my journey.  I look forward to working with you!
+			</p>
 		</div>
 	</section>
+	<!-- SKILL -->
+	<section class="skills">
+		<h1>Skills</h1>
+		<ul id="skills" class="skills-list">
+			<li class="scaleDown">
+				<i class="devicon-react-original-wordmark"></i>
+			</li>
+			<li class="scaleDown">
+				<i class="devicon-sass-original"></i>
+			</li>
+			<li class="scaleDown">
+				<i class="devicon-javascript-plain"></i>
+			</li>
+			<li class="scaleDown">
+				<i class="devicon-html5-plain-wordmark"></i>
+			</li>
+			<li class="scaleDown">
+				<i class="devicon-github-plain-wordmark"></i>
+			</li>
+			<li class="scaleDown">
+				<i class="devicon-css3-plain-wordmark"></i>
+			</li><!-- 
+			<li>
+				<i class="devicon-wordpress-plain"></i>
+			</li> -->
+		</ul>
+	</section>
 	<section class="projects">
-		<h1>Recent Works</h1>
+		<h1>Projects</h1>
 		<ul class="projects-list flex-colum-center">
 			<li class="flex-colum-center">
-				<img src="css/images/1.jpg">
+				<div class="image-container">
+					<img src="css/images/cr.png">
+				</div>	
 				<div class="project-info">
-					<h3>role</h3>
-					<h2>project name</h2>
-					<p>a short description about the project will go here.
-						Chuck pork shankle alcatra, salami drumstick frankfurter beef ribs cupim jerky short loin ham shank beef. Swine alcatra turducken landjaeger tri-tip, pancetta leberkas ham hock corned beef.
+					<h3>developer</h3>
+					<h2>Critics Review</h2>
+					<p>A React App that pulls in Movie Reviews data from The New York Times API.
 					</p>
-					<button><a href="#">discover</a></button>
+					<a class="github-link" target="_blank" href="https://github.com/Laura-deVere/React-Critic-Review-App"><i class="icon ion-logo-github"></i>Check out the code.
+					</a>
+					<button><a target="_blank" href="https://blog-c7565.firebaseapp.com/">View</a></button>
 				</div>
 			</li>
 			<li class="flex-colum-center">
-				<img src="css/images/2.jpg">
+				<div class="image-container">
+					<img src="css/images/rtip.png">
+				</div>	
 				<div class="project-info">
-					<h3>role</h3>
-					<h2>project name</h2>
-					<p>a short description about the project will go here.
-						Chuck pork shankle alcatra, salami drumstick frankfurter beef ribs cupim jerky short loin ham shank beef. Swine alcatra turducken landjaeger tri-tip, pancetta leberkas ham hock corned beef.
+					<h3>developer</h3>
+					<h2>Tip Calculator</h2>
+					<p>A Tip calculator built with React.  Calculates the bill total and splits the amount according to how many guests there are.
 					</p>
-					<button><a href="#">discover</a></button>
+					<a class="github-link" target="_blank" href="https://github.com/Laura-deVere/React-Tip-Calculator"><i class="icon ion-logo-github"></i>Check out the code.
+					</a>
+					<button><a target="_blank" href="https://tip-calc-b6952.firebaseapp.com/">View</a></button>
 				</div>
 			</li>
 			<li class="flex-colum-center">
-				<img src="css/images/3.jpg">
+				<div class="image-container">
+					<!-- <img src="css/images/rdotc1.jpg">	 -->
+					<img src="css/images/rdotc.png">
+				</div>	
 				<div class="project-info">
-					<h3>role</h3>
-					<h2>project name</h2>
-					<p>a short description about the project will go here.
-						Chuck pork shankle alcatra, salami drumstick frankfurter beef ribs cupim jerky short loin ham shank beef. Swine alcatra turducken landjaeger tri-tip, pancetta leberkas ham hock corned beef.
+					<h3>developer</h3>
+					<h2>rdotcambridge.com - portfolio</h2>
+					<p>A portfolio website built using HTML, CSS & JQuery.
 					</p>
-					<button><a href="#">discover</a></button>
+					<a  class="github-link" target="_blank" href="http://github.com/Laura-deVere/rashetda-portfolio"><i class="icon ion-logo-github"></i>Check out the code.
+					</a>
+					<button><a target="_blank" href="http://www.rdotcambridge.com/">View</a></button>
+				</div>
+			</li>
+			<li class="flex-colum-center">
+				<div class="image-container">
+					<img src="css/images/sbp.png">
+				</div>
+				<div class="project-info">
+					<h3>developer</h3>
+					<h2>Tech Business Landing Page</h2>
+					<p>A landing page built with HTML, CSS, SASS & JavaScript.
+					</p>
+					<a  class="github-link" target="_blank" href="http://github.com/Laura-deVere/SP-business"><i class="icon ion-logo-github"></i>Check out the code.
+					</a>
+					<button><a target="_blank" href="http://lit-earth-85904.herokuapp.com/index.html">View</a></button>
+				</div>
+			</li>
+			<li class="flex-colum-center">
+				<div class="image-container">
+					<img src="css/images/dl.png">
+				</div>	
+				<div class="project-info">
+					<h3>developer</h3>
+					<h2>dear laura - blog</h2>
+					<p>A simple WordPress Blog using HTML, CSS & JavaScript.
+					</p>
+					<a  class="github-link" target="_blank" href="http://github.com/Laura-deVere/Wordpress-Blog"><i class="icon ion-logo-github"></i>Check out the code.
+					</a>
+					<button><a target="_blank" href="http://dearlaura.dreamhosters.com/">View</a></button>
 				</div>
 			</li>
 		</ul>
 	</section>
 	<section class="contact flex-colum-center">
 		<h1>get in touch.</h1>
-		<form  class="flex-colum-center">
+		<!-- FORM -->
+		<form method="post" name="mailsend" class="flex-colum-center" action="form.php" id="contact-form">
 			<div class="form-field-group flex-colum-center">
 				<label for="name">your name</label>
-				<input type="text" name="your_name" id="mail-yourName">
+				<input type="text" name="name" id="mail-yourName" required>
 			</div>
 			<div class="form-field-group flex-colum-center">
 				<label for="email">email</label>
-				<input type="email" name="email" id="mail-email">
-			</div>
-			<div class="form-field-group flex-colum-center">
-				<label for="subject">subject</label>
-				<input type="text" name="subject" id="mail-subject">
+				<input type="email" name="email" id="mail-email"   pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
 			</div>
 			<div class="form-field-group flex-colum-center">
 				<label for="message">message</label>
-				<textarea name="mesaage" id="mail-message" rows="10" cols="30"></textarea>
+				<textarea name="message" id="mail-message" rows="10" cols="30" minlength="300" maxlength="1000" required></textarea>
 			</div>
-			<button type="submit">send</button>
+			<input name="firstname" type="text" id="firstname"style="display: none;">
+			<button id="form-submit" type="submit">send</button>
+			<div id="status" style="display: none;"></div>
 		</form>
+		<!-- FORM -->
 	</section>
 	<footer class="flex-colum-center">
 		<ul class="social-links flex-row-center">
 			<li>
-				<a href="#"><i class="icon ion-logo-github"></i>
+				<a target="_blank" href="http://github.com/Laura-deVere"><i class="icon ion-logo-github"></i>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a target="_blank" href="https://www.linkedin.com/in/lauradvh/">
 					<i class="icon ion-logo-linkedin"></i>
 				</a>
 			</li>
 			<li>
-				<a href="#">
-					<i class="icon ion-logo-instagram"></i>
+				<a target="_blank" href="https://jsfiddle.net/user/lauradvh19/fiddles/">
+					<i class="fab fa-jsfiddle"></i>
 				</a>
 			</li>
 		</ul>
-		<p>Laura deVere-Hopkins -- 2018</p>
+		<p>Laura deVere-Hopkins -- @2019</p>
 	</footer>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.min.js"></script>
-	<script src="bundle.js"></script>
+	<script src="dist/bundle.js?version=2.3"></script>
 </body>
 </html>
